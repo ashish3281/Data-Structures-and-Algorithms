@@ -19,6 +19,7 @@ Applications of Data Structure and Algorithms
 Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. an algorithm can be implemented in more than one programming language.
 
 From the data structure point of view, following are some important categories of algorithms −
+============================================================================================
 
 Search − Algorithm to search an item in a data structure.
 
