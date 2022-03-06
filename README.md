@@ -32,9 +32,7 @@ Update − Algorithm to update an existing item in a data structure.
 Delete − Algorithm to delete an existing item from a data structure.
 
 
-
-
-*****************************************      Sorting Algorithms       ****************************************************************
+SORTING ALGORITHM
 
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
@@ -75,9 +73,7 @@ Quick sort is the most optimized sort algorithms which performs sorting in O(n l
 7	Selection Sort>>>>>>>>>>>>>>>>>
 Selection sort finds the smallest element in the array and place it on the first place on the list, then it finds the second smallest element in the array and place it on the second place. This process continues until all the elements are moved to their correct ordering. It carries running time O(n2) which is worst than insertion sort.
 
-PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVE....
-
-____________________________________________________________________________________________________________________________________________
+PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVe...........
 
 
 **********************************************   STACK   ************************************************************************************
