@@ -31,9 +31,13 @@ Update − Algorithm to update an existing item in a data structure.
 
 Delete − Algorithm to delete an existing item from a data structure.
 
+________________________________________________________________________________________________________________________________________________________________________________
 
-*****************************************      Sorting Algorithms       *******************************************************************
-````````````````````````````
+
+*****************************************      Sorting Algorithms       ******************************************************************
+
+
+==============================================================================================================================================================================
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
 For example, consider an array A = {A1, A2, A3, A4, ?? An }, the array is called to be in ascending order if element of A are arranged like A1 > A2 > A3 > A4 > A5 > ? > An .
 Consider an array;
@@ -74,12 +78,12 @@ Selection sort finds the smallest element in the array and place it on the first
 
 PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVE....
 
-
+_______________________________________________________________________________________________________________________________________________________________________________
 
 
 **********************************************   STACK   ***************************************************************************************  
-````````````````````````````````
-________________________________________________________________________________________________________________________________________________________________________________
+
+===============================================================================================================================================================================
 What is a Stack?
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words, a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.
 
