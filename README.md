@@ -32,7 +32,7 @@ Update − Algorithm to update an existing item in a data structure.
 Delete − Algorithm to delete an existing item from a data structure.
 
 
-##**SORTING ALGORITHM**
+**SORTING ALGORITHM**
 
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
@@ -49,7 +49,7 @@ A[] = { 2, 4, 5, 9, 10, 14, 18, 30, 34, 45 }
 There are many techniques by using which, sorting can be performed. In this section of the tutorial, we will discuss each method in detail.
 
 
-**	Sorting Algorithms	Description**
+	Sorting Algorithms	Description**
   --------------------------------
 
 1	Bubble Sort>>>>>>>>>>>>>>>>>>>>>>
@@ -76,7 +76,7 @@ Selection sort finds the smallest element in the array and place it on the first
 PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVe...........
 
 
-##**********************************************   STACK   ************************************************************************************
+##   STACK  
 
 
 What is a Stack?
