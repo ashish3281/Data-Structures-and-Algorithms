@@ -2,7 +2,7 @@
 basic programs
 Data Structures are the programmatic way of storing data so that data can be used efficiently. Almost every enterprise application uses various types of data structures in one or the other way. This tutorial will give you a great understanding on Data Structures needed to understand the complexity of enterprise level applications and need of algorithms, and data structures.
 
-Why to Learn Data Structure and Algorithms?
+**Why to Learn Data Structure and Algorithms?**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 As applications are getting complex and data rich, there are three common problems that applications face now-a-days.
 
@@ -32,7 +32,7 @@ Update − Algorithm to update an existing item in a data structure.
 Delete − Algorithm to delete an existing item from a data structure.
 
 
-SORTING ALGORITHM
+##**SORTING ALGORITHM**
 
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
@@ -49,7 +49,7 @@ A[] = { 2, 4, 5, 9, 10, 14, 18, 30, 34, 45 }
 There are many techniques by using which, sorting can be performed. In this section of the tutorial, we will discuss each method in detail.
 
 
-	Sorting Algorithms	Description
+**	Sorting Algorithms	Description**
   --------------------------------
 
 1	Bubble Sort>>>>>>>>>>>>>>>>>>>>>>
@@ -76,7 +76,7 @@ Selection sort finds the smallest element in the array and place it on the first
 PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVe...........
 
 
-**********************************************   STACK   ************************************************************************************
+##**********************************************   STACK   ************************************************************************************
 
 
 What is a Stack?
@@ -95,7 +95,7 @@ Since our stack is full as the size of the stack is 5. In the above cases, we ca
 
 When we perform the delete operation on the stack, there is only one way for entry and exit as the other end is closed. It follows the LIFO pattern, which means that the value entered first will be removed last. In the above case, the value 5 is entered first, so it will be removed only after the deletion of all the other elements.
 
-  Standard Stack Operations
+ ** Standard Stack Operations**
 -------------------------------
 The following are some common operations implemented on the stack:
 
@@ -108,7 +108,7 @@ count(): It returns the total number of elements available in a stack.
 change(): It changes the element at the given position.
 display(): It prints all the elements available in the stack.
 
- Applications of Stack
+ **Applications of Stack**
  -----------------------
 The following are the applications of the stack:
 
