@@ -78,7 +78,8 @@ PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVE....
 
 
 **********************************************   STACK   ***************************************************************************************  
-
+````````````````````````````````
+________________________________________________________________________________________________________________________________________________________________________________
 What is a Stack?
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words, a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.
 
