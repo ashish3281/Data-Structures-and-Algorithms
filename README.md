@@ -32,7 +32,7 @@ Update − Algorithm to update an existing item in a data structure.
 Delete − Algorithm to delete an existing item from a data structure.
 
 
-**SORTING ALGORITHM**
+**SORTING ALGORITHM
 
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
@@ -48,8 +48,7 @@ A[] = { 2, 4, 5, 9, 10, 14, 18, 30, 34, 45 }
 
 There are many techniques by using which, sorting can be performed. In this section of the tutorial, we will discuss each method in detail.
 
-
-	Sorting Algorithms	Description**
+Sorting Algorithms	Description
   --------------------------------
 
 1	Bubble Sort>>>>>>>>>>>>>>>>>>>>>>
@@ -90,12 +89,11 @@ Stack works on the LIFO pattern. As we can observe in the below figure there are
 
 Suppose we want to store the elements in a stack and let's assume that stack is empty. We have taken the stack of size 5 as shown below in which we are pushing the elements one by one until the stack becomes full.
 
-DS Stack Introduction
 Since our stack is full as the size of the stack is 5. In the above cases, we can observe that it goes from the top to the bottom when we were entering the new element in the stack. The stack gets filled up from the bottom to the top.
 
 When we perform the delete operation on the stack, there is only one way for entry and exit as the other end is closed. It follows the LIFO pattern, which means that the value entered first will be removed last. In the above case, the value 5 is entered first, so it will be removed only after the deletion of all the other elements.
 
- ** Standard Stack Operations**
+  Standard Stack Operations
 -------------------------------
 The following are some common operations implemented on the stack:
 
@@ -108,7 +106,7 @@ count(): It returns the total number of elements available in a stack.
 change(): It changes the element at the given position.
 display(): It prints all the elements available in the stack.
 
- **Applications of Stack**
+ Applications of Stack
  -----------------------
 The following are the applications of the stack:
 
