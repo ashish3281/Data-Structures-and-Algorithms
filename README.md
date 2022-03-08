@@ -33,7 +33,7 @@ Delete − Algorithm to delete an existing item from a data structure.
 
 
 ##SORTING ALGORITHM
-
+____________________________________________________________________________________________________________________________________________
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
 For example, consider an array A = {A1, A2, A3, A4, ?? An }, the array is called to be in ascending order if element of A are arranged like A1 > A2 > A3 > A4 > A5 > ? > An .
@@ -75,51 +75,15 @@ Selection sort finds the smallest element in the array and place it on the first
 PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVe...........
 
 
-##   STACK  
-
-
-What is a Stack?
+ Stack
+ 
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words, a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.
-
-It is called as stack because it behaves like a real-world stack, piles of books, etc.
-A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.
-It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.
-Working of Stack
+  Working of Stack
+  ----------------
 Stack works on the LIFO pattern. As we can observe in the below figure there are five memory blocks in the stack; therefore, the size of the stack is 5.
 
 Suppose we want to store the elements in a stack and let's assume that stack is empty. We have taken the stack of size 5 as shown below in which we are pushing the elements one by one until the stack becomes full.
 
+DS Stack Introduction
 Since our stack is full as the size of the stack is 5. In the above cases, we can observe that it goes from the top to the bottom when we were entering the new element in the stack. The stack gets filled up from the bottom to the top.
-
-When we perform the delete operation on the stack, there is only one way for entry and exit as the other end is closed. It follows the LIFO pattern, which means that the value entered first will be removed last. In the above case, the value 5 is entered first, so it will be removed only after the deletion of all the other elements.
-
-  Standard Stack Operations
--------------------------------
-The following are some common operations implemented on the stack:
-
-push(): When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.
-pop(): When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the stack, this state is known as an underflow state.
-isEmpty(): It determines whether the stack is empty or not.
-isFull(): It determines whether the stack is full or not.'
-peek(): It returns the element at the given position.
-count(): It returns the total number of elements available in a stack.
-change(): It changes the element at the given position.
-display(): It prints all the elements available in the stack.
-
- Applications of Stack
- -----------------------
-The following are the applications of the stack:
-
-Recursion: >>>>>>>>>The recursion means that the function is calling itself again. To maintain the previous states, the compiler creates a system stack in which all the previous records of the function are maintained.
-
-DFS(Depth First Search):>>>>>>>>>>>> This search is implemented on a Graph, and Graph uses the stack data structure.
-Backtracking: Suppose we have to create a path to solve a maze problem. If we are moving in a particular path, and we realize that we come on the wrong way. In order to come at the beginning of the path to create a new path, we have to use the stack data structure.
-
-Expression conversion:>>>>>>>>>>> Stack can also be used for expression conversion. This is one of the most important applications of stack. The list of the expression conversion is given below:
-          Infix to prefix
-          Infix to postfix
-          Prefix to infix
-          Prefix to postfix
-          Postfix to infix
-	  
-STACK RELATED PROGRAM AS YOU SEE ABOVE ......
+![ds-stack](https://user-images.githubusercontent.com/92047366/157251695-9cfe6de3-143b-49d2-9af2-33f2f26ab8b2.png)
