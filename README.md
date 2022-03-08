@@ -31,9 +31,9 @@ Update − Algorithm to update an existing item in a data structure.
 
 Delete − Algorithm to delete an existing item from a data structure.
 
-
-##SORTING ALGORITHM
-____________________________________________________________________________________________________________________________________________
+=====================
+**SORTING ALGORITHM**
+=====================
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
 For example, consider an array A = {A1, A2, A3, A4, ?? An }, the array is called to be in ascending order if element of A are arranged like A1 > A2 > A3 > A4 > A5 > ? > An .
@@ -114,3 +114,36 @@ Infix to postfix
 Prefix to infix
 Prefix to postfix
 Postfix to infix
+
+Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+
+A real-world example of queue can be a single-lane one-way road, where the vehicle enters first, exits first. More real-world examples can be seen as queues at the ticket windows and bus-stops.
+
+![queue_example](https://user-images.githubusercontent.com/92047366/157253970-99878abf-4ce2-4a23-947d-0057e043272f.jpg)
+
+Queue Representation
+--------------------
+As we now understand that in queue, we access both ends for different reasons. The following diagram given below tries to explain queue representation as data structure −
+![queue_diagram](https://user-images.githubusercontent.com/92047366/157254118-3dc38cd6-d3a6-4562-9e8d-803417c10e8e.jpg)
+
+Queue Example
+-------------
+As in stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers and Structures. For the sake of simplicity, we shall implement queues using one-dimensional array.
+
+Basic Operations
+----------------
+Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory. Here we shall try to understand the basic operations associated with queues −
+
+enqueue() − add (store) an item to the queue.
+
+dequeue() − remove (access) an item from the queue.
+
+Few more functions are required to make the above-mentioned queue operation efficient. These are −
+
+peek() − Gets the element at the front of the queue without removing it.
+
+isfull() − Checks if the queue is full.
+
+isempty() − Checks if the queue is empty.
+
+In queue, we always dequeue (or access) data, pointed by front pointer and while enqueing (or storing) data in the queue we take help of rear pointer.
