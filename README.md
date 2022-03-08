@@ -32,7 +32,7 @@ Update − Algorithm to update an existing item in a data structure.
 Delete − Algorithm to delete an existing item from a data structure.
 
 
-**SORTING ALGORITHM
+##SORTING ALGORITHM
 
 
 Sorting is the process of arranging the elements of an array so that they can be placed either in ascending or descending order. 
