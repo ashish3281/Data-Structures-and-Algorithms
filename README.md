@@ -235,26 +235,6 @@ Levels − Level of a node represents the generation of a node. If the root node
 
 keys − Key represents a value of a node based on which a search operation is to be carried out for a node.
 
-Binary Search Tree Representation
----------------------------------
-Binary Search tree exhibits a special behavior. A node's left child must have a value less than its parent's value and the node's right child must have a value greater than its parent value.
-![binary_search_tree](https://user-images.githubusercontent.com/92047366/157463292-7d842222-e1c9-47cd-8d34-4af808dcc4c0.jpg)
-
-BST Basic Operations
----------------------
-The basic operations that can be performed on a binary search tree data structure, are the following −
-
-Insert − Inserts an element in a tree/create a tree.
-
-Search − Searches an element in a tree.
-
-Preorder Traversal − Traverses a tree in a pre-order manner.
-
-Inorder Traversal − Traverses a tree in an in-order manner.
-
-Postorder Traversal − Traverses a tree in a post-order manner.
-
-We shall learn creating (inserting into) a tree structure and searching a data item in a tree in this chapter. We shall learn about tree traversing methods in the coming chapter.
 
 Tree Traversal
 ---------------
@@ -309,3 +289,134 @@ Step 1 − Recursively traverse left subtree.
 Step 2 − Recursively traverse right subtree.
 Step 3 − Visit root node.
 
+=====================
+**BINARY SEARCH TREE**
+=====================
+
+Binary Search Tree Representation
+---------------------------------
+Binary Search tree exhibits a special behavior. A node's left child must have a value less than its parent's value and the node's right child must have a value greater than its parent value.
+![binary_search_tree](https://user-images.githubusercontent.com/92047366/157463292-7d842222-e1c9-47cd-8d34-4af808dcc4c0.jpg)
+
+BST Basic Operations
+---------------------
+The basic operations that can be performed on a binary search tree data structure, are the following −
+
+Insert − Inserts an element in a tree/create a tree.
+
+Search − Searches an element in a tree.
+
+Preorder Traversal − Traverses a tree in a pre-order manner.
+
+Inorder Traversal − Traverses a tree in an in-order manner.
+
+Postorder Traversal − Traverses a tree in a post-order manner.
+
+We shall learn creating (inserting into) a tree structure and searching a data item in a tree in this chapter. We shall learn about tree traversing methods in the coming chapter.
+
+===============
+**Binary Tree**
+===============
+
+The Binary tree means that the node can have maximum two children. Here, binary name itself suggests that 'two'; therefore, each node can have either 0, 1 or 2 children.
+
+Let's understand the binary tree through an example.
+![binary-tree](https://user-images.githubusercontent.com/92047366/157464939-581e0e47-c2de-41b4-ab6b-440f51983215.png)
+The above tree is a binary tree because each node contains the utmost two children. The logical representation of the above tree is given below:
+![binary-tree2](https://user-images.githubusercontent.com/92047366/157465028-b600d98f-f0c7-4ca3-a671-743812032b2b.png)
+In the above tree, node 1 contains two pointers, i.e., left and a right pointer pointing to the left and right node respectively. The node 2 contains both the nodes (left and right node); therefore, it has two pointers (left and right). The nodes 3, 5 and 6 are the leaf nodes, so all these nodes contain NULL pointer on both left and right parts.
+Properties of Binary Tree
+At each level of i, the maximum number of nodes is 2i.
+The height of the tree is defined as the longest path from the root node to the leaf node. The tree which is shown above has a height equal to 3. Therefore, the maximum number of nodes at height 3 is equal to (1+2+4+8) = 15. In general, the maximum number of nodes possible at height h is (20 + 21 + 22+….2h) = 2h+1 -1.
+The minimum number of nodes possible at height h is equal to h+1.
+If the number of nodes is minimum, then the height of the tree would be maximum. Conversely, if the number of nodes is maximum, then the height of the tree would be minimum.
+If there are 'n' number of nodes in the binary tree.
+
+The minimum height can be computed as:
+
+As we know that,
+
+n = 2h+1 -1
+
+n+1 = 2h+1
+
+Taking log on both the sides,
+
+log2(n+1) = log2(2h+1)
+
+log2(n+1) = h+1
+h = log2(n+1) - 1
+
+The maximum height can be computed as:
+
+As we know that,
+
+n = h+1
+
+h= n-1
+
+
+Types of Binary Tree
+There are four types of Binary tree:
+
+Full/ proper/ strict Binary tree
+Complete Binary tree
+Perfect Binary tree
+Degenerate Binary tree
+Balanced Binary tree
+ Full/ proper/ strict Binary tree
+ ----------------------------------
+
+The full binary tree is also known as a strict binary tree. The tree can only be considered as the full binary tree if each node must contain either 0 or 2 children. The full binary tree can also be defined as the tree in which each node must contain 2 children except the leaf nodes.
+
+
+Let's look at the simple example of the Full Binary tree.
+![types-of-binary-tree](https://user-images.githubusercontent.com/92047366/157465930-cb326e60-2dde-4a82-acca-52b228b413a0.png)
+In the above tree, we can observe that each node is either containing zero or two children; therefore, it is a Full Binary tree.
+
+Properties of Full Binary Tree
+
+The number of leaf nodes is equal to the number of internal nodes plus 1. In the above example, the number of internal nodes is 5; therefore, the number of leaf nodes is equal to 6.
+The maximum number of nodes is the same as the number of nodes in the binary tree, i.e., 2h+1 -1.
+The minimum number of nodes in the full binary tree is 2*h-1.
+The minimum height of the full binary tree is log2(n+1) - 1.
+The maximum height of the full binary tree can be computed as:
+n= 2*h - 1
+
+n+1 = 2*h
+
+h = n+1/2
+
+Complete Binary Tree
+---------------------
+The complete binary tree is a tree in which all the nodes are completely filled except the last level. In the last level, all the nodes must be as left as possible. In a complete binary tree, the nodes should be added from the left.
+
+Let's create a complete binary tree.
+![types-of-binary-tree2](https://user-images.githubusercontent.com/92047366/157466163-c60265d2-d20c-497a-8e58-1aa829912246.png)
+The above tree is a complete binary tree because all the nodes are completely filled, and all the nodes in the last level are added at the left first.
+
+Properties of Complete Binary Tree
+
+The maximum number of nodes in complete binary tree is 2h+1 - 1.
+The minimum number of nodes in complete binary tree is 2h.
+The minimum height of a complete binary tree is log2(n+1) - 1.
+The maximum height of a complete binary tree is
+
+Perfect Binary Tree
+-------------------
+A tree is a perfect binary tree if all the internal nodes have 2 children, and all the leaf nodes are at the same level.
+
+![types-of-binary-tree3](https://user-images.githubusercontent.com/92047366/157466309-d56bb12d-cafa-49fb-ad68-782d7233512e.png)
+Let's look at a simple example of a perfect binary tree.
+
+The below tree is not a perfect binary tree because all the leaf nodes are not at the same level.
+![types-of-binary-tree4](https://user-images.githubusercontent.com/92047366/157466446-49279784-99de-441e-8e7f-ddbb1cd97e97.png)
+
+Balanced Binary Tree
+---------------------
+The balanced binary tree is a tree in which both the left and right trees differ by atmost 1. For example, AVL and Red-Black trees are balanced binary tree.
+
+Let's understand the balanced binary tree through examples.
+![types-of-binary-tree7](https://user-images.githubusercontent.com/92047366/157466600-ca18ba61-a11f-43af-b3dc-f0dfb793e2cc.png)
+The above tree is a balanced binary tree because the difference between the left subtree and right subtree is zero.
+![types-of-binary-tree8](https://user-images.githubusercontent.com/92047366/157466717-81c4c663-c24f-4a17-bc60-9ad06b5f4865.png)
