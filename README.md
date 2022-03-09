@@ -75,7 +75,7 @@ Selection sort finds the smallest element in the array and place it on the first
 PROGRAM RELATED TO THIS TOPIC AS YOU SEE ABOVe...........
 
 ============
-** Stack**
+** STACK**
 ============
  
 A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle. Stack has one end, whereas the Queue has two ends (front and rear). It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words, a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.
@@ -116,7 +116,7 @@ Prefix to postfix
 Postfix to infix
 
 =========
-**Queue**
+**QUEUE**
 =========
 Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
 
@@ -150,3 +150,55 @@ isfull() − Checks if the queue is full.
 isempty() − Checks if the queue is empty.
 
 In queue, we always dequeue (or access) data, pointed by front pointer and while enqueing (or storing) data in the queue we take help of rear pointer.
+
+===============
+**LINKED LIST**
+===============
+
+A linked list is a sequence of data structures, which are connected together via links.
+
+Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List.
+
+Link − Each link of a linked list can store a data called an element.
+
+Next − Each link of a linked list contains a link to the next link called Next.
+
+LinkedList − A Linked List contains the connection link to the first link called First.
+
+Linked List Representation
+--------------------------
+Linked list can be visualized as a chain of nodes, where every node points to the next node.
+![linked_list](https://user-images.githubusercontent.com/92047366/157459097-377ad59d-74e9-43e0-8369-262fa74fef24.jpg)
+As per the above illustration, following are the important points to be considered.
+
+Linked List contains a link element called first.
+
+Each link carries a data field(s) and a link field called next.
+
+Each link is linked with its next link using its next link.
+
+Last link carries a link as null to mark the end of the list.
+
+Types of Linked List
+--------------------
+Following are the various types of linked list.
+
+Simple Linked List − Item navigation is forward only.
+
+Doubly Linked List − Items can be navigated forward and backward.
+
+Circular Linked List − Last item contains link of the first element as next and the first element has a link to the last element as previous.
+
+Basic Operations
+-----------------
+Following are the basic operations supported by a list.
+
+Insertion − Adds an element at the beginning of the list.
+
+Deletion − Deletes an element at the beginning of the list.
+
+Display − Displays the complete list.
+
+Search − Searches an element using the given key.
+
+Delete − Deletes an element using the given key.
