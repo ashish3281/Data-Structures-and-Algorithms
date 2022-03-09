@@ -202,3 +202,110 @@ Display − Displays the complete list.
 Search − Searches an element using the given key.
 
 Delete − Deletes an element using the given key.
+
+=========
+**TREE**
+=========
+
+Tree represents the nodes connected by edges. We will discuss binary tree or binary search tree specifically.
+
+Binary Tree is a special datastructure used for data storage purposes. A binary tree has a special condition that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.
+![binary_tree](https://user-images.githubusercontent.com/92047366/157462902-b36ba6e6-f268-47e5-a269-54bfad4f2be1.jpg)
+Important Terms
+---------------
+Following are the important terms with respect to tree.
+
+Path − Path refers to the sequence of nodes along the edges of a tree.
+
+Root − The node at the top of the tree is called root. There is only one root per tree and one path from the root node to any node.
+
+Parent − Any node except the root node has one edge upward to a node called parent.
+
+Child − The node below a given node connected by its edge downward is called its child node.
+
+Leaf − The node which does not have any child node is called the leaf node.
+
+Subtree − Subtree represents the descendants of a node.
+
+Visiting − Visiting refers to checking the value of a node when control is on the node.
+
+Traversing − Traversing means passing through nodes in a specific order.
+
+Levels − Level of a node represents the generation of a node. If the root node is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.
+
+keys − Key represents a value of a node based on which a search operation is to be carried out for a node.
+
+Binary Search Tree Representation
+---------------------------------
+Binary Search tree exhibits a special behavior. A node's left child must have a value less than its parent's value and the node's right child must have a value greater than its parent value.
+![binary_search_tree](https://user-images.githubusercontent.com/92047366/157463292-7d842222-e1c9-47cd-8d34-4af808dcc4c0.jpg)
+
+BST Basic Operations
+---------------------
+The basic operations that can be performed on a binary search tree data structure, are the following −
+
+Insert − Inserts an element in a tree/create a tree.
+
+Search − Searches an element in a tree.
+
+Preorder Traversal − Traverses a tree in a pre-order manner.
+
+Inorder Traversal − Traverses a tree in an in-order manner.
+
+Postorder Traversal − Traverses a tree in a post-order manner.
+
+We shall learn creating (inserting into) a tree structure and searching a data item in a tree in this chapter. We shall learn about tree traversing methods in the coming chapter.
+
+Tree Traversal
+---------------
+Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree. There are three ways which we use to traverse a tree −
+
+In-order Traversal
+Pre-order Traversal
+Post-order Traversal
+Generally, we traverse a tree to search or locate a given item or key in the tree or to print all the values it contains.
+
+In-order Traversal
+------------------
+In this traversal method, the left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.
+
+If a binary tree is traversed in-order, the output will produce sorted key values in an ascending order.
+![inorder_traversal](https://user-images.githubusercontent.com/92047366/157463827-432ed42c-0528-47ca-a3e6-6697770d18e1.jpg)
+e start from A, and following in-order traversal, we move to its left subtree B. B is also traversed in-order. The process goes on until all the nodes are visited. The output of inorder traversal of this tree will be −
+
+D → B → E → A → F → C → G
+
+Algorithm
+Until all nodes are traversed −
+Step 1 − Recursively traverse left subtree.
+Step 2 − Visit root node.
+Step 3 − Recursively traverse right subtree.
+
+Pre-order Traversal
+--------------------
+In this traversal method, the root node is visited first, then the left subtree and finally the right subtree.
+![preorder_traversal](https://user-images.githubusercontent.com/92047366/157464107-67fcb6b6-7485-4754-9b20-f946b722a2c3.jpg)
+We start from A, and following pre-order traversal, we first visit A itself and then move to its left subtree B. B is also traversed pre-order. The process goes on until all the nodes are visited. The output of pre-order traversal of this tree will be −
+
+A → B → D → E → C → F → G
+
+Algorithm
+Until all nodes are traversed −
+Step 1 − Visit root node.
+Step 2 − Recursively traverse left subtree.
+Step 3 − Recursively traverse right subtree.
+
+Post-order Traversal
+--------------------
+In this traversal method, the root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.
+![postorder_traversal](https://user-images.githubusercontent.com/92047366/157464310-da1237ea-ec1b-4740-a071-71f4c1f92292.jpg)
+We start from A, and following Post-order traversal, we first visit the left subtree B. B is also traversed post-order. The process goes on until all the nodes are visited. The output of post-order traversal of this tree will be −
+
+D → E → B → F → G → C → A
+
+Algorithm
+Until all nodes are traversed −
+Step 1 − Recursively traverse left subtree.
+Step 2 − Recursively traverse right subtree.
+Step 3 − Visit root node.
+
