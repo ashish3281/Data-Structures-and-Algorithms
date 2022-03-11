@@ -420,3 +420,40 @@ Let's understand the balanced binary tree through examples.
 ![types-of-binary-tree7](https://user-images.githubusercontent.com/92047366/157466600-ca18ba61-a11f-43af-b3dc-f0dfb793e2cc.png)
 The above tree is a balanced binary tree because the difference between the left subtree and right subtree is zero.
 ![types-of-binary-tree8](https://user-images.githubusercontent.com/92047366/157466717-81c4c663-c24f-4a17-bc60-9ad06b5f4865.png)
+
+==========
+**ARRAY**
+==========
+
+Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index.
+
+All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.
+![arrays](https://user-images.githubusercontent.com/92047366/157881043-5e528190-3d81-4a1c-b26f-e12db1ec39fd.jpg)
+Declaring Arrays
+To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows −
+
+type arrayName [ arraySize ];
+This is called a single-dimensional array. The arraySize must be an integer constant greater than zero and type can be any valid C data type. For example, to declare a 10-element array called balance of type double, use this statement −
+
+double balance[10];
+Here balance is a variable array which is sufficient to hold up to 10 double numbers.
+
+Initializing Arrays
+You can initialize an array in C either one by one or using a single statement as follows −
+
+double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+The number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].
+
+If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write −
+
+double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+You will create exactly the same array as you did in the previous example. Following is an example to assign a single element of the array −
+
+balance[4] = 50.0;
+The above statement assigns the 5th element in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called the base index and the last index of an array will be total size of the array minus 1. Shown below is the pictorial representation of the array we discussed above −
+![array_presentation](https://user-images.githubusercontent.com/92047366/157881165-9c4aca03-6065-40bf-aedb-510cc17b664e.jpg)
+
+==========
+**
