@@ -432,6 +432,7 @@ Instead of declaring individual variables, such as number0, number1, ..., and nu
 All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element.
 ![arrays](https://user-images.githubusercontent.com/92047366/157881043-5e528190-3d81-4a1c-b26f-e12db1ec39fd.jpg)
 Declaring Arrays
+-----------------
 To declare an array in C, a programmer specifies the type of the elements and the number of elements required by an array as follows −
 
 type arrayName [ arraySize ];
@@ -455,5 +456,17 @@ balance[4] = 50.0;
 The above statement assigns the 5th element in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called the base index and the last index of an array will be total size of the array minus 1. Shown below is the pictorial representation of the array we discussed above −
 ![array_presentation](https://user-images.githubusercontent.com/92047366/157881165-9c4aca03-6065-40bf-aedb-510cc17b664e.jpg)
 
-==========
-**
+=============
+**RECURSION**
+=============
+
+Recursion is a widely used phenomenon in computer science used to solve complex problems by breaking them down into simpler ones. Recursion is a process by which a function calls itself directly or indirectly. The corresponding function is called as recursive function.
+
+Using recursive algorithms, certain complex problems can be solved quite easily.
+EG: The factorial function
+--------------------------
+or our first example of recursion, let's look at how to compute the factorial function. We indicate the factorial of nnn by n!n!n, !. It's just the product of the integers 1 through nnn. For example, 5! equals 1 \cdot 2 \cdot 3 \cdot 4 \cdot 51⋅2⋅3⋅4⋅51, dot, 2, dot, 3, dot, 4, dot, 5, or 120. (Note: Wherever we're talking about the factorial function, all exclamation points refer to the factorial function and are not for emphasis.)
+You might wonder why we would possibly care about the factorial function. It's very useful for when we're trying to count how many different orders there are for things or how many different ways we can combine things. For example, how many different ways can we arrange nnn things? We have nnn choices for the first thing. For each of these nnn choices, we are left with n-1n−1n, minus, 1 choices for the second thing, so that we have n \cdot (n-1)n⋅(n−1)n, dot, left parenthesis, n, minus, 1, right parenthesis choices for the first two things, in order. Now, for each of these first two choices, we have n-2n−2n, minus, 2 choices for the third thing, giving us n \cdot (n-1) \cdot (n-2)n⋅(n−1)⋅(n−2)n, dot, left parenthesis, n, minus, 1, right parenthesis, dot, left parenthesis, n, minus, 2, right parenthesis choices for the first three things, in order. And so on, until we get down to just two things remaining, and then just one thing remaining. Altogether, we have n \cdot (n-1) \cdot (n-2) \cdots 2 \cdot 1n⋅(n−1)⋅(n−2)⋯2⋅1n, dot, left parenthesis, n, minus, 1, right parenthesis, dot, left parenthesis, n, minus, 2, right parenthesis, \@cdots, 2, dot, 1 ways that we can order nnn things. And that product is just n!n!n, ! (nnn factorial), but with the product written going from nnn down to 1 rather than from 1 up to nnn.
+Another use for the factorial function is to count how many ways you can choose things from a collection of things. For example, suppose you are going on a trip and you want to choose which T-shirts to take. Let's say that you own nnn T-shirts but you have room to pack only kkk of them. How many different ways can you choose kkk T-shirts from a collection of nnn T-shirts? The answer (which we won't try to justify here) turns out to be n! / (k! \cdot (n-k)!)n!/(k!⋅(n−k)!)n, !, slash, left parenthesis, k, !, dot, left parenthesis, n, minus, k, right parenthesis, !, right parenthesis. So the factorial function can be pretty useful. You can learn more about permutations and combinations here, but you don't need to understand them to implement a factorial algorithm.
+The factorial function is defined for all positive integers, along with 0. What value should 0! have? It's the product of all integers greater than or equal to 1 and less than or equal to 0. But there are no such integers. Therefore, we define 0! to equal the identity for multiplication, which is 1. (Defining 0! = 1 meshes nicely with the formula for choosing kkk things out of nnn things. Suppose that we want to know how many ways there are to choose nnn things out of nnn things. That's easy, because there is only one way: choose all nnn things. So now we know that, using our formula, n! / (n! \cdot (n-n)!)n!/(n!⋅(n−n)!)n, !, slash, left parenthesis, n, !, dot, left parenthesis, n, minus, n, right parenthesis, !, right parenthesis should equal 1. But (n-n)!(n−n)!left parenthesis, n, minus, n, right parenthesis, ! is 0!, so now we know that n! / (n! \cdot 0!)n!/(n!⋅0!)n, !, slash, left parenthesis, n, !, dot, 0, !, right parenthesis should equal 1. If we cancel out the n!n!n, ! in both the numerator and denominator, we see that 1/(0!)1/(0!)1, slash, left parenthesis, 0, !, right parenthesis should equal 1, and it does because 0! equals 1.)
+So now we have a way to think about n!n!n, !. It equals 1 when n = 0n=0n, equals, 0, and it equals 1 \cdot 2 \cdots (n-1) \cdot n1⋅2⋯(n−1)⋅n1, dot, 2, \@cdots, left parenthesis, n, minus, 1, right parenthesis, dot, n when nnn is positive.
